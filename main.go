@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject1/service1"
+	"github.com/lk233/test_go/service1"
 	"log"
 	"net/http"
 )
