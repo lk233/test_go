@@ -1,15 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"awesomeProject1/service1"
 	"log"
 	"net/http"
 )
 
 func main() {
-	http.HandleFunc("/test", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Hello, world222!")
-	})
+	http.HandleFunc("/test", service1.Handler1)
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
